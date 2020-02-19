@@ -1,12 +1,12 @@
 {
   "name": "frontend",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "Jordan <jmmccart@ualberta.ca>",
   "homepage": "https://github.com/McCarthy16/VividTheory#readme",
   "license": "ISC",
   "main": "lib/frontEnd.js",
-  "typings":"lib/frontEnd.d.ts",
+  "typings": "lib/frontEnd.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -15,14 +15,14 @@
     "lib"
   ],
   "publishConfig": {
-    "access":"public"
+    "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/McCarthy16/VividTheory.git"
   },
   "scripts": {
-    "tsc":"tsc",
+    "tsc": "tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
