@@ -6,6 +6,13 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "@types/node": "^13.7.4",
+    "lerna": "^3.20.2",
+    "typescript": "^3.7.5"
+  },
+  "scripts":{
+    "start":"lerna run tsc && lerna publish"
   }
+
+  
 }
