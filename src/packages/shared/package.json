@@ -22,7 +22,7 @@
     "url": "git+https://github.com/McCarthy16/VividTheory.git"
   },
   "scripts": {
-    "tsc": "tsc src/Article.ts --outDir ./lib",
+    "tsc": "tsc --p ./tsconfig.json",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {

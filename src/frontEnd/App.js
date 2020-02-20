@@ -1,7 +1,8 @@
 import React from 'react';
-import './App.css';
-const backEnd = require('./../packages/backEnd');
-
+import './App.css'; 
+const backEnd = require("./../packages/backEnd");
+var back = new backEnd.backEnd();
+console.log(back.greet());
 function App() {
   return (
     <div className="App">
