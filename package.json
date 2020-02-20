@@ -6,13 +6,57 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
-    "@types/node": "^13.7.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/babel__core": "^7.1.4",
     "lerna": "^3.20.2",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.4.0",
+    "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   },
-  "scripts":{
-    "start":"lerna run tsc && lerna publish"
+  "scripts": {
+    "tsc": "lerna run tsc",
+    "push": "lerna publish",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/node": "^13.7.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McCarthy16/VividTheory.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/McCarthy16/VividTheory/issues"
+  },
+  "homepage":".",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
-
-  
 }
