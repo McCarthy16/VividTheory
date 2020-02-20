@@ -1,5 +1,7 @@
 import {Article} from "./../../shared/lib/Article";
 
+// backEnd connection for grabbing articles for dashboard page
+// TODO: connect with a database
 export class backEnd{
 	articles:Article[];
 

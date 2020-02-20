@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css'; 
+// load backEnd connection, receive articles for dashboard page
 const backEnd = require("./../packages/backEnd");
 var back = new backEnd.backEnd();
-back.setElements();
+back.setElements(); // currently only used to initialize the mock articles
 var articles = back.getElements();
+
+
+// React App to generate html with our data
 function App() {
   return (
     <div className="App">
