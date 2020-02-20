@@ -1,3 +1,7 @@
+import { Article } from "./../../shared/lib/Article";
 export declare class backEnd {
-    greet(): string;
+    articles: Article[];
+    constructor();
+    setElements(): void;
+    getElements(): Article[];
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css'; 
 const backEnd = require("./../packages/backEnd");
 var back = new backEnd.backEnd();
-console.log(back.greet());
+back.setElements();
+var articles = back.getElements();
 function App() {
   return (
     <div className="App">
@@ -12,10 +13,15 @@ function App() {
         </a>
         <p>
           Vivid Theory Blog.
-        </p>
-        
-        
+        </p> 
       </header>
+
+      <li className="Article-container">
+        {
+          articles.map(e1 => <div key={e1.id}> <h2> {e1.title}</h2> <p> {e1.body} </p> </div>)
+        }
+      </li>
+
     </div>
   );
 }
