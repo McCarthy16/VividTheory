@@ -8,6 +8,7 @@ var articles = back.getElements();
 
 
 // React App to generate html with our data
+// TODO: set max columns to 3 
 function App() {
   return (
     <div className="App">
@@ -15,16 +16,27 @@ function App() {
         <a href="http://www.vividtheory.com">
           <img src="https://vividtheory.blob.core.windows.net/assignment/vtlogo.svg"  border="0" className="App-logo" alt="logo" />
         </a>
+        <div class="neumorphism" >
+
+        </div>
         <p>
           Vivid Theory Blog.
         </p> 
       </header>
 
-      <li className="Article-container">
+      <div className="gallery">
         {
-          articles.map(e1 => <div key={e1.id}> <h2> {e1.title}</h2> <p> {e1.body} </p> </div>)
+          articles.map(e1 => 
+          <div class="article-display-container" key={e1.id}> 
+            <div class="article-display-card"> 
+              <h2> {e1.title}</h2> 
+              <p> {e1.body} </p> 
+              
+            </div>
+          </div>)
+          
         }
-      </li>
+      </div>
 
     </div>
   );
