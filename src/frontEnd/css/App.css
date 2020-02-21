@@ -3,8 +3,8 @@ html{
 }
 .App {
   text-align: center;
-  height:1fr;
-  width:1fr;
+  height:100%;
+  width:100%;
 }
 
 .App-logo {
@@ -42,34 +42,4 @@ html{
   background: #302936;
   box-shadow: inset 24px 24px 48px #1e1a22, 
               inset -24px -24px 48px #42384a;
-}
-
-.gallery {
-  position:relative;
-  margin:auto;
-  top: 25px;
-  width:95%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-  grid-column-gap:20px;
-  grid-row-gap: 20px;
-
-}
-
-.article-display-container {
-  height:300px;
-  border-radius: 30px;
-background: #ffffff;
-box-shadow: inset 5px 5px 25px #a3a3a3, 
-            inset -5px -5px 25px #ffffff;
-  }
-.article-display-card{
-  position: relative;
-  margin:auto;
-  border-radius: 10px;
-  
-  padding:1px;
-  top:10%;
-  width:80%;
-  height:80%;
 }
