@@ -15,6 +15,7 @@ export default class ViewArticle extends React.Component{
     
 
     return (<div>
+            <div className="return">Click logo return</div>
             <div className="article" dangerouslySetInnerHTML={{__html: articles[index].body}}/>
             
             </div>

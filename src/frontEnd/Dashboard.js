@@ -32,7 +32,7 @@ export default class Dashboard extends React.Component{
                   </div>
                   <div className="article-display-card"> 
                     <h2> {e1.title}</h2><br></br> 
-                    <p> {e1.preview} </p> 
+                    <div className="article-preview"> {e1.preview} </div> 
                     
                   </div> 
                 </div>

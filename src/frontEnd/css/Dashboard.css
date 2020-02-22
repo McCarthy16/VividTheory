@@ -33,6 +33,15 @@ a {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   }
+
+.article-preview{
+  position:absolute;
+  top:auto;
+  width:100%;
+  bottom:0px;
+  height:100px;
+}
+
   .date {
       position: absolute;
       top: 10px;
@@ -65,6 +74,7 @@ a {
   top:0;
   width:100%;
   color: #302936;
+  height:50%;
 
   
 }
