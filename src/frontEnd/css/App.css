@@ -1,5 +1,5 @@
 html{
-  background-color: white;
+  background-color:rgb(240,240,240) ;
 }
 .App {
   text-align: center;
@@ -24,6 +24,14 @@ html{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-footer {
+  position: relative;
+  background-color: #302936;
+  height: 50px;
+  width:100%;
   color: white;
 }
 

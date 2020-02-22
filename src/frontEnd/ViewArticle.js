@@ -12,13 +12,12 @@ export default class ViewArticle extends React.Component{
   render(){
     
     index = articles.findIndex(x => "/"+x.url === this.props.location.pathname)    
-    console.log(articles[index]);   
-    return (
-        <div className="article">
-        {articles[index].title}<br></br>
-        {articles[index].body}
-          </div>
-        
+    
+
+    return (<div>
+            <div className="article" dangerouslySetInnerHTML={{__html: articles[index].body}}/>
+            
+            </div>
 
     );
   }
