@@ -14,8 +14,8 @@ export default class ViewArticle extends React.Component{
     index = articles.findIndex(x => "/"+x.url === this.props.location.pathname)    
     
 
-    return (<div>
-            <div className="return">Click logo return</div>
+    return (<div className="containers">
+            <div className="return">logo to return</div>
             <div className="article" dangerouslySetInnerHTML={{__html: articles[index].body}}/>
             
             </div>
