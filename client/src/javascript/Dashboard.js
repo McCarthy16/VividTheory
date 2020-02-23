@@ -17,7 +17,7 @@ export default class Dashboard extends React.Component{
   }
 
   componentDidMount(){
-    fetch('/api/articles')
+    fetch('/api')
       .then(res => res.json())
       .then(articles => this.setState({articles}));
   }

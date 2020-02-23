@@ -45,12 +45,15 @@ newArticle.save((error) => {
 */
 
 
-app.get('/api/articles', (req, res) => {
-  const articles = [
-    {id: 1, url: 'Article/01', title: 'Article 01', preview:"This is Article 01",body: `<h1>This is Article 05</h1>`, day:"19", month:"FEB" },
-    {id: 2, url: 'Article/01', title: 'Article 01', preview:"This is Article 01",body: `<h1>This is Article 05</h1>`, day:"19", month:"FEB" },
-    {id: 3, url: 'Article/01', title: 'Article 01', preview:"This is Article 01",body: `<h1>This is Article 05</h1>`, day:"19", month:"FEB" }];
-  res.json(articles);
+app.get('/api', (req, res) => {
+  Article.find({ })
+  	.then((data) => {
+  		res.json(data);
+  	})
+  	.catch(() => { 
+  		console.log("error")
+  	});
+  
 });
 
 

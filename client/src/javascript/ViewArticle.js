@@ -21,7 +21,7 @@ export default class ViewArticle extends React.Component{
   		{article: [this.state.articles[0]]});
   }
   componentDidMount(){
-    fetch('/api/articles')
+    fetch('/api')
       .then(res => res.json())
       .then(articles => this.setState({articles}));
   	
