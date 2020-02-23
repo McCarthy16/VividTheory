@@ -34,8 +34,8 @@ html{
 
 .App-footer {
   position: absolute;
-  top:1fr;
-  background-color: #302936;
+  top:100vh;
+  
   height: 50px;
   width:100%;
   color: white;

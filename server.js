@@ -44,7 +44,6 @@ newArticle.save((error) => {
 });
 */
 
-
 app.get('/api', (req, res) => {
   Article.find({ })
   	.then((data) => {

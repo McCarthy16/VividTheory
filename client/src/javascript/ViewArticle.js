@@ -12,31 +12,40 @@ export default class ViewArticle extends React.Component{
     super();
     this.state = {
         	articles: [],
-        	article:[]
+        	article:[],
+        	idx:Number
         }
   }
 
-  setArticle(){
-  	this.setState(
-  		{article: [this.state.articles[0]]});
-  }
+
   componentDidMount(){
+  	this.state.idx = this.props.location.state.idx
+  	
     fetch('/api')
       .then(res => res.json())
       .then(articles => this.setState({articles}));
-  	
+
   }
 
 
   render(){  
+  	var article;
   	
+  	article = this.state.articles[this.props.location.state.idx]
     //index = this.state.articles.findIndex(x => "/"+x.url === this.props.location.pathname)    
-    return (<div className="containers">
-            <div className="return">logo to return</div>
-            {this.state.articles.map(article =>
-            	<div className="artice" key={article.id} dangerouslySetInnerHTML={{__html: article.body}}></div>
-            )}
-            </div>
-    );
+	    
+    if (article != undefined){
+	    return (<div className="containers">
+	            <div className="return">logo to return</div>
+	            
+	            {<div className="artice" key={article.url} dangerouslySetInnerHTML={{__html:article.body}}></div>
+	            }
+	            </div>
+	    );
+	}
+	else{
+		return(<div></div>);
+
+	}
   }
 }

@@ -14,6 +14,7 @@ export default class Dashboard extends React.Component{
     this.state = {
       articles:[]
     }
+  
   }
 
   componentDidMount(){
@@ -30,7 +31,14 @@ export default class Dashboard extends React.Component{
             {
 
               this.state.articles.map(e1 =>                
-                <Link to={e1.url} id={e1.id} key={e1.id} >              
+                <Link to={{
+                  pathname:e1.url,
+                  state: {
+                    idx:e1.idx
+                  }
+
+
+                }} key={e1.idx}>              
                 <div className="article-display-container" > 
                   <div className="article-display-img">
                     <div className="date">
