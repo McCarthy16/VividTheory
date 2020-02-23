@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "concurrently": "^3.5.1",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mongoose": "^5.9.2"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,5 @@
     "url": "https://github.com/McCarthy16/VividTheory/issues"
   },
   "homepage": "https://github.com/McCarthy16/VividTheory#readme",
-  "proxy":"http://localhost:5000"
+  "proxy": "http://localhost:5000"
 }

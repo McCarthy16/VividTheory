@@ -33,8 +33,8 @@ export default class ViewArticle extends React.Component{
     //index = this.state.articles.findIndex(x => "/"+x.url === this.props.location.pathname)    
     return (<div className="containers">
             <div className="return">logo to return</div>
-            {this.state.article.map(article =>
-            	<div className="artice" dangerouslySetHTML={article.body}></div>
+            {this.state.articles.map(article =>
+            	<div className="artice" key={article.id} dangerouslySetInnerHTML={{__html: article.body}}></div>
             )}
             </div>
     );
