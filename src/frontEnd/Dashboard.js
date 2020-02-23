@@ -5,8 +5,8 @@ import {Link} from 'react-router-dom';
 // load backEnd connection, receive articles for dashboard page
 const backEnd = require("./../packages/backEnd");
 var back = new backEnd.backEnd();
-back.setElements(); // currently only used to initialize the mock articles
-back.setConnection();
+//back.setElements(); // currently only used to initialize the mock articles
+//back.setConnection();
 var articles = back.getElements();
 // React App to generate html with our data
 // TODO: set max columns to 3 

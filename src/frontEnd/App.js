@@ -4,8 +4,8 @@ import './css/App.css';
 import Dashboard from './Dashboard'
 import ViewArticle from './ViewArticle'
 import {Route, Link} from 'react-router-dom';
-// React App to generate html with our data
-// TODO: set max columns to 3
+// React App to generate html with our dat
+
 export default class App extends React.Component{
   render(){
     return (
@@ -19,7 +19,7 @@ export default class App extends React.Component{
             </div>
           </Link>
           <p>
-            Vivid Theory Blog.
+            Vivid Theory
           </p> 
         </header>
 

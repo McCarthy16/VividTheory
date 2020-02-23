@@ -343,8 +343,6 @@ export default function mockData(): Article[]{
 				            { id: 5, url:"Article/05", title: 'Article 05', preview:"This is Article 05",body: 'This is Article 05', day:"19", month:"FEB" },
 				            { id: 6, url:"Article/06", title: 'Article 06', preview:"This is Article 06",body: 'This is Article 06', day:"18", month:"FEB" },
 				            { id: 7, url:"Article/07", title: 'Article 07', preview:"This is Article 07",body: 'This is Article 07', day:"18", month:"FEB" },
-				            {  id: 8, url:"Article/08", title: 'Article 08', preview:"This is Article 08",body: 'This is Article 08', day:"18", month:"FEB" },
-				            { id: 7, url:"Article/09", title: 'Article 09', preview:"This is Article 09",body: 'This is Article 09', day:"17", month:"FEB" },
-				            {  id: 8, url:"Article/10", title: 'Article 10', preview:"This is Article 10",body: 'This is Article 10', day:"17", month:"FEB" }]
+				            {  id: 8, url:"Article/08", title: 'Article 08', preview:"This is Article 08",body: 'This is Article 08', day:"18", month:"FEB" }]
 	return articles
 }
