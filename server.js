@@ -2,15 +2,12 @@ const express = require('express');
 
 const app = express();
 
-app.get('/api/customers', (req, res) => {
-  const customers = [
-    {id: 1, firstName: 'John', lastName: 'Doe'},
-    {id: 2, firstName: 'Brad', lastName: 'Traversy'},
-    {id: 3, firstName: 'Mary', lastName: 'Swanson'},
-  ];
-
-  res.json(customers);
+app.get('/api/articles', (req, res) => {
+  const articles = [
+    {id: 1, url: 'Article/01', title: 'Article 01', preview:"This is Article 01",body: 'This is Article 05', day:"19", month:"FEB" }];
+  res.json(articles);
 });
+
 
 const port = 5000;
 
