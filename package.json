@@ -1,76 +1,22 @@
 {
-  "name": "full-stack-blog",
+  "name": "reactexpress",
   "version": "1.0.0",
-  "description": "Create a simple blog challenge",
-  "author": "Vivid Theory",
-  "license": "UNLICENSED",
-  "private": true,
-  "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/babel__core": "^7.1.4",
-    "lerna": "^3.20.2",
-    "markdown-to-html": "0.0.13",
-    "mongoose": "^5.9.2",
-    "mysql": "^2.18.1",
-    "netlify-cli": "^2.35.0",
-    "prettier": "^1.19.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.0",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
-  },
+  "description": "Starter kit for creating React and Express apps",
+  "main": "server.js",
   "scripts": {
-    "tsc": "lerna run tsc",
-    "push": "lerna publish",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "author": "Brad Traversy",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.14.6"
   },
-  "main": "index.js",
   "dependencies": {
-    "lerna": "^3.20.2",
-    "markdown-to-html": "0.0.13",
-    "mongodb-client-encryption": "^1.0.1",
-    "mongoose": "^5.9.2",
-    "mysql": "^2.18.1",
-    "netlify-cli": "^2.35.0",
-    "prettier": "^1.19.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.0",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/McCarthy16/VividTheory.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/McCarthy16/VividTheory/issues"
-  },
-  "homepage": ".",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2"
   }
 }
