@@ -1,8 +1,12 @@
+
+
 .container{
 	width:80%;
 	height:auto;
 	color:#302936;
 	margin:auto;
+	overflow-x: hidden;
+
 }
 
 .article{

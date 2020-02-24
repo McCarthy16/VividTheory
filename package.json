@@ -2,9 +2,9 @@
   "name": "reactexpress",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "cd client && react-scripts build",
     "client-install": "cd client && npm install",
     "start": "node server.js",
     "server": "nodemon server.js",
