@@ -35,7 +35,7 @@ export default class ViewArticle extends React.Component{
     if (article !== undefined){
 	    return (<div className="container">
               <Link to="/" > 
-	              <div className="return">&#129092;</div>
+	              <div className="return">&#10094;</div>
 	            </Link>
 	            {<div className="artice" key={article.url} dangerouslySetInnerHTML={{__html:article.body}}></div>
 	            }
