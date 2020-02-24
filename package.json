@@ -5,11 +5,16 @@
   "main": "server.js",
   "scripts": {
     "build": "react-scripts build",
-    "client-install": "cd client && npm install",
+    "client-install": "npm install",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "client2": "react-scripts start",
+    "dev": "concurrently \"npm run server\" \"react-scripts start\""
+  },
+  "devServer": {
+    "contentBase": "./public",
+    "inline": true
   },
   "engines": {
     "node": "^12.14.1"
@@ -30,7 +35,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "1.0.17"
   },
   "repository": {
     "type": "git",
@@ -42,15 +48,6 @@
   "homepage": "https://github.com/McCarthy16/VividTheory#readme",
   "proxy": "http://localhost:5000",
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    
   }
 }

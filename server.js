@@ -1,6 +1,18 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
+//const routes = require('./public/index')
+
+var path = require('path');
+
+module.exports = {
+  //...
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 3000
+  }
+};
 
 //connect to my database
 const uri = 'mongodb+srv://MyUser:Marie1234shyla@mccarthy16-hbvbo.gcp.mongodb.net/vividtheory?retryWrites=true&w=majority'
