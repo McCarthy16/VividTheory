@@ -1,14 +1,10 @@
 import React from 'react'; 
 import './../css/Dashboard.css';
 import {Link} from 'react-router-dom';
-// load backEnd connection, receive articles for dashboard page
-//const backEnd = require("./../packages/backEnd");
-//var back = new backEnd.backEnd();
-//back.setElements(); // currently only used to initialize the mock articles
-//back.setConnection();
-//var articles = back.getElements();
-// React App to generate html with our data
+
+// React App to generate dashboar's html with our data
 export default class Dashboard extends React.Component{
+  // constructor to initialize state values
   constructor(){
     super();
     this.state = {
@@ -16,14 +12,15 @@ export default class Dashboard extends React.Component{
     }
   
   }
-
+  // called when the component mounts
+  // get the data from the backend
   componentDidMount(){
     fetch('/api')
       .then(res => res.json())
       .then(articles => this.setState({articles}));
   }
 
-
+  // rend html for the 'root'
   render(){
     return (
       <div>
