@@ -3,13 +3,12 @@ const mongoose = require('mongoose');
 const path = require('path')
 const app = express();
 //const routes = require('./public/index')
-app.use(express.static(path.join(__dirname, 'build')))
-var path = require('path');
+app.use(express.static('./build'));
 
 module.exports = {
   //...
   devServer: {
-    contentBase: path.join(__dirname, 'build'),
+    contentBase: './build',
     compress: true,
     port: 3000
   }
