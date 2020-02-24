@@ -19,7 +19,7 @@ export default class ViewArticle extends React.Component{
 
 
   componentDidMount(){
-  	this.state.idx = this.props.location.state.idx
+  	this.setState({idx:this.props.location.state.idx});
   	
     fetch('/api')
       .then(res => res.json())
@@ -34,8 +34,8 @@ export default class ViewArticle extends React.Component{
   	article = this.state.articles[this.props.location.state.idx]
     //index = this.state.articles.findIndex(x => "/"+x.url === this.props.location.pathname)    
 	    
-    if (article != undefined){
-	    return (<div className="containers">
+    if (article !== undefined){
+	    return (<div className="container">
 	            <div className="return">logo to return</div>
 	            
 	            {<div className="artice" key={article.url} dangerouslySetInnerHTML={{__html:article.body}}></div>
