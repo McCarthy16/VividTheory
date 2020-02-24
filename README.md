@@ -1,6 +1,6 @@
 # Vivid Theory Blog Challenge
 
-The purpose of this challenge is to develop a functional blog for Vivid Theory.
+The purpose of this challenge is to develop a functional blog for Vivid Theory. The application uses a React front end, express backend, and is connected to a MongoDB database.
 
 ## Getting Started
 

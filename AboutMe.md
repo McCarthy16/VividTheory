@@ -8,7 +8,7 @@ I was born and raised in Calgary, AB.
 ```
 ## Education
 ```
-I got my Bachelor of Science Specialization in Computing Science degree from the University of Alberta, where I graduated in December 2019.
+I got my Bachelor of Science Specialization in Computing Science degree from the University of Alberta.
 ```
 
 ## Known Programming Languages (Ranked by likeness)
