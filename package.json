@@ -2,7 +2,7 @@
   "name": "reactexpress",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
     "build": "cd client && react-scripts build",
     "client-install": "cd client && npm install",
@@ -21,7 +21,8 @@
   "dependencies": {
     "concurrently": "^3.5.1",
     "express": "^4.16.2",
-    "mongoose": "^5.9.2"
+    "mongoose": "^5.9.2",
+    "path": "^0.12.7"
   },
   "repository": {
     "type": "git",
