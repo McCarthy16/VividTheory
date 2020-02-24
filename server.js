@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 //const routes = require('./public/index')
-
+app.use(express.static(path.join(__dirname, 'dist')))
 var path = require('path');
 
 module.exports = {
