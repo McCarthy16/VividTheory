@@ -5,7 +5,14 @@ const app = express();
 
 var path = require('path');
 
-
+module.exports = {
+  //...
+  devServer: {
+    contentBase: path.join(__dirname, 'build'),
+    compress: true,
+    port: 3000
+  }
+};
 
 //connect to my database
 const uri = 'mongodb+srv://MyUser:Marie1234shyla@mccarthy16-hbvbo.gcp.mongodb.net/vividtheory?retryWrites=true&w=majority'
