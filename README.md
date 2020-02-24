@@ -1,4 +1,4 @@
-### Vivid Theory Blog Challenge
+# Vivid Theory Blog Challenge
 
 The purpose of this challenge is to develop a functional blog for Vivid Theory.
 
@@ -6,11 +6,11 @@ The purpose of this challenge is to develop a functional blog for Vivid Theory.
 
 These instructions will get you a copy of the blog up and running on your local machine.
 
-# Prerequisites
+### Prerequisites
 
 In order to run the project you must have Node Pack Manager (npm).
 
-# Installation
+### Installation
 
 First you must clone the github repository using the following.
 
@@ -27,7 +27,7 @@ npm install
 Install the dependecies for client
 npm run client-install
 
-# Running
+## Running
 
 Now that everything is installed run the application, both client and server, on local host with
 
@@ -35,10 +35,10 @@ npm run dev
 
 ## App Info
 
-# Author
+### Author
 
 Jordan McCarthy
 
-# Version
+### Version
 
 1.0.0
