@@ -58,7 +58,6 @@ newArticle.save((error) => {
 app.get('/api', (req, res) => {
   Article.find({ })
   	.then((data) => {
-  		console.log(data)
   		res.json(data);
   	})
   	.catch(() => { 
