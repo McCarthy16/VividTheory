@@ -3,8 +3,7 @@
 The purpose of this challenge is to develop a functional blog for Vivid Theory. The application uses a React front end, express backend, and is connected to a MongoDB database.
 
 ## Getting Started
-
-These instructions will get you a copy of the blog up and running on your local machine.
+A live version of my application can be found at https://vividtheoryblog.herokuapp.com/ , alternatively you can follow these instructions to get a copy of the blog up and running on your local machine.
 
 
 ### Prerequisites
