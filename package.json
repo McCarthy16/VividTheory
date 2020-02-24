@@ -47,5 +47,7 @@
   },
   "homepage": "https://github.com/McCarthy16/VividTheory#readme",
   "proxy": "http://localhost:5000",
-  "browserslist": {}
+  "browserslist": {
+    
+  }
 }
