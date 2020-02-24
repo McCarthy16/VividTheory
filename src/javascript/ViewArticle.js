@@ -1,13 +1,10 @@
 import React from 'react';
 import './../css/ViewArticle.css';
-//const backEnd = require("./../packages/backEnd");
-//var back = new backEnd.backEnd();
-//back.setElements(); // currently only used to initialize the mock articles
-//var articles = back.getElements();
-//var index;
-// React App to generate html with our data
-// TODO: set max columns to 3 
+import {Link} from 'react-router-dom';
+
+// React App to generate Article's html with our data
 export default class ViewArticle extends React.Component{
+  // constructor to initialize state values
   constructor(){
     super();
     this.state = {
@@ -17,7 +14,8 @@ export default class ViewArticle extends React.Component{
         }
   }
 
-
+  // called when the component mounts
+  // get the data from the backend
   componentDidMount(){
   	this.setState({idx:this.props.location.state.idx});
   	//console.log("here")
@@ -27,7 +25,7 @@ export default class ViewArticle extends React.Component{
 
   }
 
-
+  // render html for the 'root' 
   render(){  
   	var article;
   	
@@ -36,8 +34,9 @@ export default class ViewArticle extends React.Component{
 	    
     if (article !== undefined){
 	    return (<div className="container">
-	            <div className="return">logo to return</div>
-	            
+              <Link to="/" > 
+	              <div className="return">&#129092;</div>
+	            </Link>
 	            {<div className="artice" key={article.url} dangerouslySetInnerHTML={{__html:article.body}}></div>
 	            }
 	            </div>

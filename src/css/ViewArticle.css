@@ -26,10 +26,11 @@
 }
 
 .return{
-	color:#302936;
+	color:white;
 	position: absolute;
-	left:0px;
-	top:100px;
+	left:100px;
+	top:30px;
+	font-size: 30px
 }
 
 ul, li {
