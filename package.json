@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "react-scripts build && mv build dist",
     "client-install": "npm install",
     "start": "node server.js",
     "server": "nodemon server.js",
