@@ -1,6 +1,5 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const path = require('path')
 const app = express();
 //const routes = require('./public/index')
 app.use(express.static('./build'));
@@ -59,6 +58,7 @@ newArticle.save((error) => {
 app.get('/api', (req, res) => {
   Article.find({ })
   	.then((data) => {
+  		console.log(data)
   		res.json(data);
   	})
   	.catch(() => { 
